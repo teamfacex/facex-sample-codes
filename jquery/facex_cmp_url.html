@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var USER_ID = "your user id";
+    var USER_KEY = "your user key";
+    var IMAGE1_URL =  "first image url";
+    var IMAGE2_URL =  "second image url";
+    var url = "http://106.51.58.118:5000/compare_faces?face_det=1";
+    var headers = {
+		"user_id"          : USER_ID,
+		"user_key"         : USER_KEY
+	};
+	var payload  = { "img_1" : IMAGE1_URL,"img_2" : IMAGE2_URL };
+    $.ajax({url: url,
+    	headers  : headers,
+	    type: "POST",
+	    async : true,
+	    mimeType : "multipart/form-data",
+	    data: payload,
+	    dataType: "text",
+    error: function(xhr,status,error){
+    	console.log(xhr + " | " + status + " | " +error);
+    	$("#div1").text(xhr + " | " + status + " | " +error);
+    }
+    }).done(function(response){
+		console.log(response);
+		$("#div1").html(response);
+	});
+});
+</script>
+</head>
+<body>
+<div id="div1"><h2></h2></div>
+</body>
+</html>

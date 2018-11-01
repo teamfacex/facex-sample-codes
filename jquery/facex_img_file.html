@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+$(function(){
+  var USER_ID = "your user id";
+  var USER_KEY = "your user key";
+  $('#upload-file-btn1').click(function(){
+    var formdata = new FormData($('#upload-file1')[0]);
+    $.ajax({
+       url: 'http://106.51.58.118:5000/get_image_attr?face_det=1',
+       type: 'POST',
+       data: formdata,
+        async: false,
+        cache: false,
+        contentType: false,
+        processData: false,
+        headers:{"user_id"          : USER_ID,
+                 "user_key"         : USER_KEY},
+        success: function (returndata) {
+        console.log(returndata);
+        }
+    });
+  });
+});
+</script>
+
+<form class="form-inline" id="upload-file1" method="post" enctype="multipart/form-data">
+          <input type = "file" name = "image_attr" id = "image_attr">
+          <button id="upload-file-btn1" type="button" class="btn btn-primary">Submit</button>
+          </form>
+</body>
+</html>
