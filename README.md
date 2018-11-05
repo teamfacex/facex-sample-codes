@@ -11,7 +11,6 @@ the specified HTTP request method.
   <strong> <li> get_image_attr :</strong>  For detecting faces , gender detection , age range prediction and facial landmark. 
    </li>
    <li> <strong> compare_faces : </strong> For comaparing two faces to check if it belongs to the same person. </li>
-
    <strong> <li> get_face_vec :</strong> Get 128 dimensional feature vector describing a face for recognition and identification purpose. </li>
 </ol>
 The samplecodes in python ,php and jquery is provided in the repository files as below:
