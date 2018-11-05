@@ -13,7 +13,7 @@ the specified HTTP request method.
    <li> <strong> compare_faces : </strong> For comaparing two faces to check if it belongs to the same person. </li>
    <strong> <li> get_face_vec :</strong> Get 128 dimensional feature vector describing a face for recognition and identification purpose. </li>
 </ol>
-The samplecodes in python ,php and jquery is provided in the repository files as below:
+The samplecodes in python, php and jquery is provided in the repository files as below:
 <ol type="1">
 <strong><li> get_image_attr: </strong>
 <ul>
