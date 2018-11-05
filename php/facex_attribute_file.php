@@ -1,8 +1,12 @@
 <?php
-$APP_ID = "your app id";
-$APP_KEY = "your app key";
-$IMAGE1_PATH ="first image path";
-$IMAGE2_PATH ="second image path";
+// you can get the app_id and app_key in user dashboard
+$APP_ID = "your_app_id";
+$APP_KEY = "your_app_key";
+//------------------------
+
+$IMAGE_PATH ="image_path"; // add image path from local system
+$queryUrl = "http://106.51.58.118:5000/get_image_attr?face_det=1"; // face attribute url
+
 function makecUrlFile($file){
   $mime = mime_content_type($file);
   $info = pathinfo($file);
@@ -10,11 +14,10 @@ function makecUrlFile($file){
   $output = new CURLFile($file, $mime, $name);
   return $output;
 }
-$imageObject1 = makecUrlFile($IMAGE1_PATH);
-$imageObject2 = makecUrlFile($IMAGE2_PATH);
+
+$imageObjectt = makecUrlFile($IMAGE_PATH);
 $request = curl_init();
-$queryUrl = "http://106.51.58.118:5000/compare_faces?face_det=1";
-$imageObject =  array("img_1" => $imageObject1, "img_2" => $imageObject2);
+$imageObject =  array("image_attr" => $imageObjectt);
 curl_setopt($request, CURLOPT_URL, $queryUrl);
 curl_setopt($request, CURLOPT_POST, true);
 curl_setopt($request, CURLOPT_HTTPHEADER, array(
@@ -25,7 +28,7 @@ curl_setopt($request, CURLOPT_HTTPHEADER, array(
     );
 curl_setopt($request,CURLOPT_POSTFIELDS,$imageObject);
 curl_setopt($request, CURLOPT_RETURNTRANSFER, true);
-    $response = curl_exec($request);
+    $response = curl_exec($request); // curl response
     echo $response;
     curl_close($request);
 ?>

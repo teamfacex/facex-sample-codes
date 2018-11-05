@@ -1,8 +1,11 @@
 <?php
-$APP_ID = "your app id";
-$APP_KEY = "your app key";
-$IMAGE_PATH ="image path";
-$queryUrl = "http://106.51.58.118:5000/get_face_vec?face_det=1";
+// you can get the app_id and app_key in user dashboard
+$APP_ID = "your_app_id";
+$APP_KEY = "your_app_key";
+//------------------------
+
+$IMAGE_PATH ="image_path"; // add image path from local system
+$queryUrl = "http://106.51.58.118:5000/get_face_vec?face_det=1"; //feature vector url
 
 function makecUrlFile($file){
   $mime = mime_content_type($file);
@@ -26,7 +29,7 @@ curl_setopt($request, CURLOPT_HTTPHEADER, array(
     );
 curl_setopt($request,CURLOPT_POSTFIELDS,$imageObject);
 curl_setopt($request, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($request);
+$response = curl_exec($request);// curl response
 echo $response;
 curl_close($request);
 ?>

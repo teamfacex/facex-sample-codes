@@ -5,11 +5,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	var USER_ID = "your user id";
-    var USER_KEY = "your user key";
-    var IMAGE1_URL =  "first image url";
-    var IMAGE2_URL =  "second image url";
-    var url = "http://106.51.58.118:5000/compare_faces?face_det=1";
+	// you can get the app_id and app_key in user dashboard
+	var USER_ID = "your_user_id";
+    var USER_KEY = "your_user_key";
+    //-----------------------------
+
+    // add image url
+    var IMAGE1_URL =  "first_image_url";
+    var IMAGE2_URL =  "second_image_url";
+    //--------------
+    var url = "http://106.51.58.118:5000/compare_faces?face_det=1"; //face compare url
     var headers = {
 		"user_id"          : USER_ID,
 		"user_key"         : USER_KEY
@@ -27,7 +32,7 @@ $(document).ready(function(){
     	$("#div1").text(xhr + " | " + status + " | " +error);
     }
     }).done(function(response){
-		console.log(response);
+		console.log(response); // response displayed on console
 		$("#div1").html(response);
 	});
 });
