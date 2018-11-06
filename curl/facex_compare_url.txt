@@ -1,0 +1,9 @@
+// you can get the app_id and app_key in user dashboard
+
+curl --request POST \
+  --url 'http://106.51.58.118:5000/compare_faces?face_det=1' \
+  --header 'content-type: multipart/form-data' \
+  --header 'user_id: your_user_id' \
+  --header 'user_key: your_user_key' \
+--form img_1=your_first_image_url \
+--form img_2=your_second_image_url
