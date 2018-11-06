@@ -17,6 +17,8 @@ The samplecodes in python, php and jquery is provided in the repository files as
 <ol type="1">
 <strong><li> get_image_attr: </strong>
 <ul>
+<li> <strong> curl:</strong> <ul> <strong><li> using file upload method:</strong> curl -> facex_attribute_file.txt </li>
+           <li> <strong> using url method        : </strong> curl -> facex_attribute_url.txt  </li> </ul> </li>
 <strong><li> python:</strong> pyhton -> facex_attribute.py  </li>
    <li> <strong> php:</strong> <ul> <strong><li> using file upload method:</strong> php -> facex_attribute_file.php </li>
            <li> <strong> using url method        : </strong> php -> facex_attribute_url.php  </li> </ul> </li>
@@ -27,8 +29,10 @@ The samplecodes in python, php and jquery is provided in the repository files as
 <li>               
 <strong>compare_faces:</strong>
 <ul>
-<li>
-   <strong> python: </strong>pyhton -> facex_compare.py</li>
+
+  <li>  <strong> curl:</strong> <ul> <li> <strong>sing file upload method: </strong> curl -> facex_compare_file.txt </li>
+          <li> <strong> using url method        : </strong> curl -> facex_compare_url.txt </li> </ul> </li>
+  <li> <strong> python: </strong>pyhton -> facex_compare.py</li>
  <li>  <strong> php:</strong> <ul> <li> <strong>sing file upload method: </strong> php -> facex_compare_file.php </li>
           <li> <strong> using url method        : </strong> php -> facex_compare_url.php </li> </ul> </li>
   <li> <strong> jquery: </strong> <ul> <li>  <strong> using file upload method:</strong> jquery -> facex_compare_file.html</li>
@@ -38,8 +42,10 @@ The samplecodes in python, php and jquery is provided in the repository files as
 <li>
 <strong> get_face_vec: </strong>
 <ul>
-<li>
-   <strong> python:</strong>  pyhton -> facex_attribute.py</li>
+
+  <li> <strong> curl:</strong> <ul> <li> <strong> using file upload method:</strong> curl -> facex_attribute_file.txt </li>
+        <li>   <strong> using url method        : </strong> curl -> facex_attribute_url.txt </li> </ul> </li>
+ <li>  <strong> python:</strong>  pyhton -> facex_attribute.py</li>
   <li> <strong> php:</strong> <ul> <li> <strong> using file upload method:</strong> php -> facex_attribute_file.php </li>
         <li>   <strong> using url method        : </strong> php -> facex_attribute_url.php </li> </ul> </li>
   <li> <strong> jquery:</strong> <ul> <li>  <strong> using file upload method:</strong> jquery -> facex_attribute_file.html </li>
