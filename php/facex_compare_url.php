@@ -9,7 +9,7 @@ $IMAGE1_URL = "first_image_url";
 $IMAGE2_URL = "second_image_url";
 //--------------------------
 
-$queryUrl = "http://106.51.58.118:5000/compare_faces?face_det=1";// face compare url
+$queryUrl = "http://facexapi.com/compare_faces?face_det=1";// face compare url
 
 $imageObject =  array("img_1" => $IMAGE1_URL , "img_2" => $IMAGE2_URL);
 $request = curl_init();

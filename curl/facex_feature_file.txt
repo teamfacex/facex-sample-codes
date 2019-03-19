@@ -1,7 +1,7 @@
 // you can get the app_id and app_key in user dashboard
 
 curl --request POST \
-  --url 'http://106.51.58.118:5000/get_face_vec?face_det=1' \
+  --url 'http://facexapi.com/get_face_vec?face_det=1' \
   --header 'content-type: multipart/form-data' \
   --header 'user_id: your_user_id' \
   --header 'user_key: your_user_key' \

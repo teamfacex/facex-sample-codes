@@ -14,7 +14,7 @@ $(function(){
   $('#upload-file-btn1').click(function(){
     var formdata = new FormData($('#upload-file1')[0]);
     $.ajax({
-       url: 'http://106.51.58.118:5000/get_image_attr?face_det=1', //face attribute url
+       url: 'http://facexapi.com/get_image_attr?face_det=1', //face attribute url
        type: 'POST',
        data: formdata,
         async: false,

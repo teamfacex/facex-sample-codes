@@ -5,7 +5,7 @@ $APP_KEY = "your_app_key";
 //-----------------------
 
 $IMAGE_URL = "image_url"; // add image url
-$queryUrl = "http://106.51.58.118:5000/get_image_attr?face_det=1"; // face attribute url
+$queryUrl = "http://facexapi.com/get_image_attr?face_det=1"; // face attribute url
 
 $imageObject =  array("image_attr" => $IMAGE_URL);
 $request = curl_init();

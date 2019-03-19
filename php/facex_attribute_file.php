@@ -5,7 +5,7 @@ $APP_KEY = "your_app_key";
 //------------------------
 
 $IMAGE_PATH ="image_path"; // add image path from local system
-$queryUrl = "http://106.51.58.118:5000/get_image_attr?face_det=1"; // face attribute url
+$queryUrl = "http://facexapi.com/get_image_attr?face_det=1"; // face attribute url
 
 function makecUrlFile($file){
   $mime = mime_content_type($file);

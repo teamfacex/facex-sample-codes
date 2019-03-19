@@ -19,7 +19,7 @@ $(function(){
   formdata.append('img_1',image1.files[0],image1.files[0].name);
   formdata.append('img_2',image1.files[0],image1.files[0].name);
   $.ajax({
-     url: 'http://106.51.58.118:5000/compare_faces?face_det=1', //face compare url
+     url: 'http://facexapi.com/compare_faces?face_det=1', //face compare url
      type: 'POST',
      data: formdata,
       async: false,

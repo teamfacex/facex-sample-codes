@@ -6,7 +6,7 @@ USER_KEY = "your user key"
 
 IMAGE_PATH = "your image path" # add image path from local system
 IMAGE_URL = "your image url" # add image url
-API_URL = "http://106.51.58.118:5000/get_face_vec?face_det=1" # feature vector url
+API_URL = "http://facexapi.com/get_face_vec?face_det=1" # feature vector url
 files = {'img': open(IMAGE_PATH, 'rb')}
 payload = {"img": IMAGE_URL}
 headers = {"user_id": USER_ID ,"user_key": USER_KEY} 
