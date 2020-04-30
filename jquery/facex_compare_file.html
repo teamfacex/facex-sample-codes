@@ -6,9 +6,9 @@
 <body>
 <script>
 $(function(){
-  // you can get the app_id and app_key in user dashboard
-  var USER_ID = "youru_ser_id";
-  var USER_KEY = "your_user_key";
+  // you can get the user_id in user dashboard
+  var USER_ID = "your_user_id";
+  
   //------------------------
 
 	var image1 = document.getElementById("img_1");
@@ -27,7 +27,7 @@ $(function(){
       contentType: false,
       processData: false,
       headers:{"user_id"          : USER_ID,
-               "user_key"         : USER_KEY},
+                },
       success: function (returndata) {
       console.log(returndata); // response displayed on console
       }
