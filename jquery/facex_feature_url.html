@@ -5,16 +5,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	// you can get the app_id and app_key in user dashboard
+	// you can get the user_id in user dashboard
 	var USER_ID = "your user id";
-    var USER_KEY = "your user key";
+    
     //----------------------------
 
     var IMAGE_URL =  "image url"; // add image url
     var url = "http://facexapi.com/get_face_vec?face_det=1"; // url for feature vector
     var headers = {
 		"user_id"          : USER_ID,
-		"user_key"         : USER_KEY
+		
 	};
 	var payload  = { "img" : IMAGE_URL};
     $.ajax({url: url,
