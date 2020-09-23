@@ -5,9 +5,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-	// you can get the app_id and app_key in user dashboard
+	// you can get the user_id in user dashboard
 	var USER_ID = "your_user_id";
-    var USER_KEY = "your_user_key";
+   
     //-----------------------------
 
     // add image url
@@ -17,7 +17,7 @@ $(document).ready(function(){
     var url = "http://facexapi.com/compare_faces?face_det=1"; //face compare url
     var headers = {
 		"user_id"          : USER_ID,
-		"user_key"         : USER_KEY
+		
 	};
 	var payload  = { "img_1" : IMAGE1_URL,"img_2" : IMAGE2_URL };
     $.ajax({url: url,
