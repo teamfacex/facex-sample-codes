@@ -6,9 +6,8 @@
 <body>
 <script>
 $(function(){
-  // you can get the app_id and app_key in user dashboard
+  // you can get the user_id in user dashboard
   var USER_ID = "your_user_id";
-  var USER_KEY = "your_user_key";
   //--------------------------
 
   $('#upload-file-btn1').click(function(){
@@ -21,8 +20,8 @@ $(function(){
         cache: false,
         contentType: false,
         processData: false,
-        headers:{"user_id"          : USER_ID,
-                 "user_key"         : USER_KEY},
+        headers:{"user_id"          : USER_ID
+                },
         success: function (returndata) {
         console.log(returndata); // response displayed on console
         }
